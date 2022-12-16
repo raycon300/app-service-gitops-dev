@@ -1,6 +1,10 @@
+metadata:
+  name: spring-boot-hello-dev
+  namespace: openshift-gitops
 spec:
   destination:
     server: https://kubernetes.default.svc
+    namespace: ms-boletoes-dev
   source:
-    repoURL: http://git-gogs-unsafe-gogs.apps-crc.testing/gogs-admin/spring-boot-hello-dev-config
+    repoURL: https://github.com/raycon300/app-service-gitops-dev
     targetRevision: HEAD
